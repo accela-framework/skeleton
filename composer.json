@@ -1,0 +1,10 @@
+{
+    "name": "accela-framwork/skeleton",
+    "description": "Accela Framework Skeleton Application",
+    "type": "project",
+    "require": {
+        "php": ">=8.2",
+        "accela-framework/accela": "^0.4",
+        "accela-framework/sitemap-xml-plugin": "^0.1"
+    }
+ }
