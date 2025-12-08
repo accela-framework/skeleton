@@ -15,5 +15,5 @@ ACCELA.changePageContent = function(body, pageContent){
 // module
 ACCELA.modules.greeting = (body) => {
   const name = body.getAttribute("data-name");
-  body.innerText = `Hello ${name}!`;
+  body.innerText = `Hello, ${name}.`;
 };

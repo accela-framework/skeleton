@@ -3,7 +3,14 @@
 </head>
 
 <body>
-  <accela-component use="layout" id="top">
-    <p data-use-module="greeting" data-bind="data-name:name"></p>
-  </accela-component>
+  <div>
+    <!-- user defined component -->
+    <accela-component use="layout" id="top">
+      <!-- test component -->
+     <accela-component use="accela:hello">Accela</accela-component>
+
+     <!-- user defined module -->
+      <p data-use-module="greeting" data-bind="data-name:name"></p>
+    </accela-component>
+  </div>
 </body>
