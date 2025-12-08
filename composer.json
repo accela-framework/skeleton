@@ -6,5 +6,10 @@
         "php": ">=8.2",
         "accela-framework/accela": "^0.5",
         "accela-framework/sitemap-xml-plugin": "^0.2"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php ./post-create.php"
+        ]
     }
  }
