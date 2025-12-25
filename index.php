@@ -2,9 +2,8 @@
 
 namespace Accela;
 
-if(file_exists(__DIR__ . "/env.php")){
-  require_once __DIR__ . "/env.php";
-}
+use Accela\Env;
+Env::load(__DIR__ . "/env.php");
 
 require_once __DIR__ . "/vendor/autoload.php";
 

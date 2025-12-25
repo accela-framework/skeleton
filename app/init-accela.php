@@ -2,10 +2,11 @@
 
 namespace App;
 use Accela\Accela;
+use function Accela\env;
 
 $accela = new Accela([
   "appDir" => __DIR__,
-  "url" => "https://example.com",
+  "url" => env("url", "http://localhost"),
   "lang" => "ja",
   "serverLoadInterval" => 60,
   "plugins" => [
