@@ -1,15 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-namespace Accela;
+use Accela\Env;
 
 if(php_sapi_name() !== "cli") exit;
 
-if(file_exists(__DIR__ . "/../../env.php")){
-  require_once __DIR__ . "/../../env.php";
-}
-
 require_once __DIR__ . "/../../vendor/autoload.php";
+
+Env::load(__DIR__ . "/../../env.php");
 
 $accela = require_once __DIR__ . "/../init-accela.php";
 $accela->staticSiteGenerator->output([
